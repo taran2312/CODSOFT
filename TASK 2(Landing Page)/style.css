@@ -1,0 +1,315 @@
+/* General Styles */
+@font-face {
+    font-family: chancery;
+    src: url(chancery.ttf);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1e7;
+    color: #502314;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h2, h3 {
+    color: #502314;
+}
+/* Slider */
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow:hidden;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    animation:slide  6s infinite;
+}
+
+.slides img {
+    width: 25%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-40%);
+    }
+}
+/* Header Container */
+header {
+    background-color:#f8f1e7;   /* Dark background for the header */
+    color: #502314;              /* White text color */
+    padding: 20px 0;          /* Padding around the header content */
+    text-align: center;       /* Center-aligns the header content */
+}
+
+/* Website Name (H1) */
+header h1 {
+    margin: 0;                /* Removes default margin */
+    font-size: 2.5rem;        /* Large font size for the website name */
+    font-weight: bold;        /* Bold text for emphasis */
+    letter-spacing: 9px;     /* Slight letter spacing for a modern look */
+    font-family: chancery;
+}
+
+/* Navigation Menu */
+header nav ul {
+    list-style-type: none;    /* Removes bullet points */
+          /* Adds space above the menu */
+    padding: 0;               /* Removes default padding */
+    display: flex;            /* Flexbox layout for horizontal alignment */
+    justify-content: center;  /* Centers the navigation items */
+    background-color:burlywood;
+}
+
+/* Navigation Items */
+header nav ul li {
+    margin: 0 15px;           /* Adds horizontal spacing between menu items */
+}
+
+/* Navigation Links */
+header nav ul li a {
+    color: #502314;              /* White text color for links */
+    font-size: 1rem;          /* Standard font size */
+    padding: 5px;             /* Adds padding around the links */
+    text-transform: uppercase;/* Uppercase text for a uniform look */
+    transition:transform ease-in-out;/* Smooth color transition on hover */
+    font-family: serif;
+    
+
+}
+header nav ul li a:hover{
+    color:#f8f1e7;
+}
+
+
+
+
+/* Navbar Styles */
+nav {
+    color: #502314;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    background-color:burlywood;
+}
+
+nav ul li a {
+    color: #502314;
+    padding: 8px 16px;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: #502314;
+    color: #f8f1e7;
+
+}
+
+/* Slider Styles */
+.slider {
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    height: 400px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Shop by Category Styles */
+#shop-by-category {
+    background-color: #f8f1e7;
+    padding: 20px;
+    text-align: center;
+}
+#shop-by-category h2{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: burlywood;
+    text-align: center;
+}
+.categories {
+    width: 100%;
+    height:50%;
+    display: flex;
+    justify-content:center;
+}
+
+.category {
+    flex:1;
+    margin: 10px;
+}
+
+.category img {
+    width: 50%;
+}
+
+.category h3 {
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Latest Products Styles */
+#latest-products {
+    background-color: #f8f1e7;
+    padding: 20px;
+    text-align: center;
+
+}
+#latest-products h2{
+    background-color: burlywood;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1;
+    margin: 10px;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+/* Features Section Styles */
+#features {
+    background-color: #502314;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+#features h2{
+    color: #f8f1e7;
+}
+#features h3{
+    color:#f8f1e7;
+}
+#features h5{
+    color: #f8f1e7;
+    font-size: 1.3rem;
+}
+
+.feature {
+    margin-bottom: 20px;
+    color: #f8f1e7;
+}
+.feature a{
+    color: white;
+    text-decoration: underline;
+}
+
+.feature img {
+    width: 50px;
+    margin: 0 5px;
+}
+
+.review-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #f8f1e7;
+}
+
+.review-form input[type="text"], .review-form select, .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.review-form button {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #fff;
+    color:#502314;
+}
+
+.reviews-list {
+    margin-top: 20px;
+}
+
+.review-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.review-item h5 {
+    margin: 0;
+    color: #007bff;
+}
+
+.review-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Scroll to Top Button Styles */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+}
+
+#scrollToTop:hover {
+    background-color: #555;
+}
+
